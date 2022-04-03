@@ -86,6 +86,28 @@ public class CurrentWeather extends AppCompatActivity {
                     else if (description.equals("clear sky")){
                         WeatherPic.setImageResource(R.drawable.clearsky);
                     }
+                    else if (description.equals("haze")){
+                        WeatherPic.setImageResource(R.drawable.haze);
+                    }
+                    else if (description.equals("scattered clouds")){
+                        WeatherPic.setImageResource(R.drawable.scatteredclouds);
+                    }
+                    else if (description.equals("broken clouds")){
+                        WeatherPic.setImageResource(R.drawable.scatteredclouds);
+                    }
+                    else if (description.equals("light rain")){
+                        WeatherPic.setImageResource(R.drawable.rain);
+                    }
+                    else if (description.equals("light snow")){
+                        WeatherPic.setImageResource(R.drawable.snow);
+                    }
+                    else if (description.equals("rain")){
+                        WeatherPic.setImageResource(R.drawable.rain);
+                    }
+                    else if (description.equals("snow")){
+                        WeatherPic.setImageResource(R.drawable.snow);
+                    }
+
                     DescriptionTextView.setText(description);
                     TempTextView.setText(df.format(temp) + " °C");
                     output += "Feels Like: " + df.format(feelsLike) + " °C"
